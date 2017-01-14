@@ -1,0 +1,37 @@
+{
+  "private": true,
+  "author": "Kirill Kaysarov <defcuts@mail.ru>",
+  "scripts": {
+    "start": "node server",
+    "build": "webpack --config webpack.production"
+  },
+  "dependencies": {
+    "compression": "^1.6.2",
+    "express": "^4.14.0",
+    "localenv": "^0.2.2",
+    "vue": "^2.0.0",
+    "vue-router": "^2.0.0",
+    "vuex": "^2.0.0",
+    "vuex-router-sync": "^3.0.0",
+    "vuex-signal": "^1.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.5.1",
+    "buble": "^0.14.2",
+    "buble-loader": "^0.3.2",
+    "css-loader": "^0.25.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "postcss-inline-svg": "^2.3.0",
+    "postcss-loader": "^1.1.0",
+    "style-loader": "^0.13.1",
+    "vue-loader": "^10.0.2",
+    "vue-template-compiler": "^2.0.0",
+    "webpack": "^1.13.3",
+    "webpack-dev-middleware": "^1.8.4",
+    "webpack-hot-middleware": "^2.13.2",
+    "webpack-merge": "^1.0.2"
+  },
+  "browser": {
+    "./src/config.js": "./src/config.browser.js"
+  }
+}
